@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <title></title>
   </head>
   <body class="body">
@@ -31,30 +32,32 @@
               <div class="inputDiv">
                 <!--  email input  -->
                 <p class="titleSingup">Correo Electrónico</p>
-                <input class="inputStyle" type="text" name="name" value="">
+                <input class="inputStyle" type="email"  ng-model="user.email" id="email">
                 <br>
                 <!--  name input -->
                 <p class="titleSingup">Nombre</p>
-                <input class="inputStyle" type="text" name="name" value="">
+                <input class="inputStyle" type="text"  ng-model="user.username" id = "nombre">
                 <br>
                 <!--  company name  -->
                 <p class="titleSingup">Nombre de la Empresa</p>
-                <input class="inputStyle" type="text" name="name" value="">
+                <input class="inputStyle" type="text"   ng-model="user.empresa" id="empresa">
                 <br>
                 <!--  nit  -->
                 <p class="titleSingup">Numero de Nit  </p>
-                <input class="inputStyle" type="text" name="name" value="">
+                <input class="inputStyle" type="text"  ng-model="user.nit" id="nit">
                 <br>
                 <!--  password input  -->
                 <p class="titleSingup">Password</p>
-                <input class="inputStyle" type="text" name="name" value="">
+                <input class="inputStyle" type="password" ng-model="user.password" id = "password">
               </div>
               <br>
               <br>
               <!--  register button  -->
               <div class="RegisterDiv">
+                <a href="#/usser">
                   <!--  button  -->
-                  <button class="buttonStyleSignup" type="button" name="button">REGISTRARME</button>
+                  <button class="buttonStyleSignup" type="button" name="button" ng-click="signUp(user)">REGISTRARME</button>
+                </a>
               </div>
             </div>
           </div>

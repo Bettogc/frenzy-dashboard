@@ -1,0 +1,56 @@
+
+<!--*****************************************************************************************-->
+<div class="bodyInicio container-fluid mainDivStyle" ng-controller="MessageCtrl">
+    <!--*****************************************************************************************-->
+    <div class="col-md-2 sidebar">
+      <div class="sidebarDashboardDiv" ng-click="callPerfil()">
+        <img class="dasboardIcon" src="img/logo3.png" alt="" />
+      </div>
+      <div class="sidebarTextDiv" ng-click="callPerfil()">
+        <p class="sidebarText">PERFIL</p>
+      </div>
+      <div class="sidebarTextDiv" ng-click="callIngresoDeDatos()">
+        <p class="sidebarText">INGRESO DE DATOS</p>
+      </div>
+      <div class="sidebarTextDiv" ng-click="callAnalytics()">
+        <p class="sidebarText">ANALYTICS</p>
+      </div>
+      <div class="sidebarTextDiv" ng-click="callHistorial()">
+        <p class="sidebarText">HISTORIAL</p>
+      </div>
+      <div class="sidebarTextDiv" ng-click="callFinanzas()">
+        <p class="sidebarText">FINANZAS</p>
+      </div>
+      <div class="sidebarTextDiv" ng-click="callSoporteTecnico()">
+        <p class="sidebarText">SOPORTE TECNICO</p>
+      </div>
+    </div>
+    <!--*****************************************************************************************-->
+    <div class="col-md-8 col-md-offset-2 main">
+      <!--*****************************************************************************************-->
+      <nav class="col-md-10 col-md-offset-2 main navbar-fixed-top">
+        <div>
+          <div  class="navbar-collapse">
+            <div class="">
+              <input type="text" class="form-control" placeholder="Search..." style="color:#3F51B5; font-weight:bolder;">
+            </div>
+            <div class="divUsserNavBar">
+              <img class="headerUsserLogo" src="img/usuario.jpg" alt="" />
+              <div class="ellipsifyThreeLines">
+                <div class="ellipsify">
+                  <div class="pre-dots"></div>
+                  <div class="dots">&hellip;</div>
+                  <p class="">Dominos pizza</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--*****************************************************************************************-->
+      <div>
+        <h1 class="mainTitle" style="margin-top:100px;">{{lista[0][0]}}</h1>
+      </div>
+    </div>
+    <!--*****************************************************************************************-->
+</div>

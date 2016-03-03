@@ -1,3 +1,5 @@
+
+
 <div class="container">
   <div class="row">
     <div class="col-md-3"></div>
@@ -15,23 +17,23 @@
         <div class="content2">
           <div class="inputDiv">
             <!--  first input  -->
-            <p class="title">Correo Electrónico</p>
-            <input class="inputStyle" type="text" name="name" value="">
+            <p class="title" >Correo Electrónico</p>
+            <input class="inputStyle" type="text" ng-model="user.username">
             <br>
             <br>
             <!--  second input  -->
             <p class="title">Password</p>
-            <input class="inputStyle" type="text" name="name" value="">
+            <input class="inputStyle" type="password"  ng-model="user.password">
           </div>
           <!--  login and titles div  -->
           <div class="loginDiv">
             <p class="loginDivTitle1">No tienes una cuenta aún?</p>
-            <p class="loginDivTitle2">Crea una aqui</p>
+            <p class="loginDivTitle2" ><a href="#/signup/">Crea una aqui</a></p>
             <!--  button div -->
             <div class="buttonDiv">
               <!--  button  -->
-              <a href="#/signup/">
-                <button class="buttonStyle" type="button" name="button">INGRESAR</button>
+              <a>
+                <button class="buttonStyle" type="button" name="button" ng-click="logIn(user)">INGRESAR</button>
               </a>
               </div>
           </div>
