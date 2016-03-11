@@ -1,0 +1,117 @@
+.profileDivIameUsser{
+  width:600px;
+}
+.profileImage{
+  height: 190px;
+  width: 190px;
+  border-radius: 100px;
+}
+.profileDivCompaniName{
+  float:right;
+  margin-top: 50px;
+  color:#2A3E93;
+}
+.profileCompaniName{
+  font-weight: bolder;
+  font-size: 35px;
+}
+/****************************/
+/******  dropdown menu ******/
+.profileDropdownMenu{
+  background-color: white;
+  border: 3px solid #2A3E93;
+  color:#2A3E93;
+  width: 400px;
+  height: 75px;
+  margin-top: 40px;
+  border-radius: 15px;
+  font-size: 28px;
+  font-weight: bolder;
+  padding-left: 15px;
+  }
+/****************************/
+.profileDiv4{
+  margin-top: 15px;
+}
+.profileText1{
+  font-size: 28px;
+  font-weight: bolder;
+  color:#2A3E93;
+  margin-top: 50px;
+}
+.profileText2{
+  font-size: 23px;
+  color:#2A3E93;
+  margin-bottom: 40px;
+}
+.profileStaffNumber{
+  background-color: #F2F2F2;
+  color:#2A3E93;
+  font-size: 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 175px;
+  text-align: center;
+  padding-top: 8px;
+}
+/**********************************/
+.profileDiv5{
+  margin-top: 25px;
+}
+.profileText3{
+  font-weight: bold;
+  color:#2A3E93;
+}
+.profileInputStyle{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid #2A3E93;
+  width: 300px;
+}
+.profileDivInput{
+}
+/**********************************/
+.profileDiv6{
+  margin-top: 50px;
+}
+.profileText4{
+  font-size: 28px;
+  font-weight: bold;
+  color:#2A3E93;
+}
+.glyphicon-plus-sign{
+  color:#2A3E93;
+  font-size: 20px;
+  margin-left: 10px;
+}
+/**********************************/
+.profileDiv7{
+}
+.profileDivFoother{
+  margin-top: 50px;
+}
+.profileText5{
+  font-size: 20px;
+  font-weight: bold;
+  color:#2A3E93;
+}
+.profileText6{
+  font-size: 20px;
+  color:#2A3E93;
+}
+.profileDiv7LeftFix{
+}
+.profileRightLine{
+  border-right: 2px solid #2A3E93;
+  margin-bottom: 40px;
+}
+/**********************************/
+.inline{
+  display: inline-block;
+}
+.profileSpacerTop{
+  font-size: 4px;
+  color:white;
+}
+/*$(".theComboExample").theCombo();*/

@@ -1,0 +1,68 @@
+<!--*****************************************************************************************-->
+<div class="bodyMenu container-fluid mainDivStyle">
+    <!--*****************************************************************************************-->
+    <div class="col-md-2 sidebar">
+      <div class="sidebarDashboardDiv" ng-click="callPerfil()">
+        <img class="dasboardIcon" src="img/logo3.png" alt="" />
+      </div>
+      <a ui-sref="menu.profile">
+        <div class="sidebarTextDiv">
+          <p class="sidebarText">PERFIL</p>
+        </div>
+      </a>
+      <a ui-sref="menu.dataEntry">
+        <div class="sidebarTextDiv">
+          <p class="sidebarText">INGRESO DE DATOS</p>
+        </div>
+      </a>
+      <a ui-sref="menu.analytics">
+        <div class="sidebarTextDiv">
+          <p class="sidebarText">ANALYTICS</p>
+        </div>
+      </a>
+      <a ui-sref="menu.record">
+        <div class="sidebarTextDiv">
+          <p class="sidebarText">HISTORIAL</p>
+        </div>
+      </a>
+      <a ui-sref="menu.finance">
+        <div class="sidebarTextDiv">
+          <p class="sidebarText">FINANZAS</p>
+        </div>
+      </a>
+      <a ui-sref="menu.technicalSupport">
+        <div class="sidebarTextDiv">
+          <p class="sidebarText">SOPORTE TECNICO</p>
+        </div>
+      </a>
+    </div>
+    <!--*****************************************************************************************-->
+    <!--*****************************************************************************************-->
+    <nav class="col-md-10 col-md-offset-2 main navbar-fixed-top" style="margin-bottom:100px;">
+      <div>
+        <div  class="navbar-collapse">
+          <div class="">
+            <input type="text" class="form-control" placeholder="Search..." style="color:#3F51B5; font-weight:bolder;">
+          </div>
+          <div class="divUsserNavBar">
+            <img class="headerUsserLogo" src="img/usuario2.jpg" alt="" />
+            <div class="ellipsifyThreeLines">
+              <div class="ellipsify">
+                <div class="pre-dots"></div>
+                <div class="dots">&hellip;</div>
+                <p class="">Dominos pizza</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="col-md-10 col-md-offset-2 main" style="overflow:scroll;height:815px; margin-top:110px;">
+
+      <!--*****************************************************************************************-->
+      <div style="">
+        <div ui-view></div>
+      </div>
+    </div>
+    <!--*****************************************************************************************-->
+</div>

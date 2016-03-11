@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Frenzy</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/usser.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/signin.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/signup.css" media="screen" title="no title" charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>frenzy</title>
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-    <!-- bootstrap -->
-    <!-- Latest compiled and minified CSS -->
-  </head>
-  <body class="body" ng-app="myWeb">
-    <div ng-view ></div>
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="http://code.angularjs.org/1.5.0/angular-route.min.js"></script>
-    <script src="http://code.angularjs.org/1.5.0/i18n/angular-locale_es-es.js"></script>
-    <script type="text/javascript" src="https://parse.com/downloads/javascript/parse-1.6.14.js"></script>
-    <script src="js/web.js"></script>
+    <head>
+      <title>Frenzy</title>
+      <meta charset="utf-8">
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+      <!--  stylessheet css  -->
+      <link rel="stylesheet" href="css/menu.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="css/signin.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="css/signup.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="css/menu/analytics.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="css/menu/dataEntry.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="css/menu/finance.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="css/menu/profile.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="css/menu/record.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="css/menu/technicalSupport.css" media="screen" title="no title" charset="utf-8">
+
+      <!--  meta files  -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Add to homescreen for Chrome on Android -->
+      <meta name="mobile-web-app-capable" content="yes">
+      <!-- Add to homescreen for Safari on iOS -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+      <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+      <!-- Tile icon for Win8 (144x144 + tile color) -->
+      <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+      <meta name="msapplication-TileColor" content="#3372DF">
+      <!-- script  -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+      <script src="js/app.js"></script>
+    </head>
+    <body ng-app="frenzyWeb">
+      <!--  ui view for all html  -->
+      <div ui-view></div>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+      <script src="http://code.angularjs.org/1.5.0/angular-route.min.js"></script>
+      <script src="http://code.angularjs.org/1.5.0/i18n/angular-locale_es-es.js"></script>
+      <script type="text/javascript" src="https://parse.com/downloads/javascript/parse-1.6.14.js"></script>
     </body>
 </html>
