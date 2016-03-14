@@ -27,12 +27,15 @@
   border-radius: 15px;
   font-size: 28px;
   font-weight: bolder;
-  padding-left: 15px;
+  /* webkit for remove arrow right */
+  -webkit-appearance:none;/* Safari and Chrome */
+  -moz-appearance:none;/* Firefox */
   }
-/****************************/
-.profileDiv4{
-  margin-top: 15px;
+.profileDropdownMenuOptions{
+  padding-left: 25px;
 }
+/****************************/
+
 .profileText1{
   font-size: 28px;
   font-weight: bolder;
@@ -45,17 +48,27 @@
   margin-bottom: 40px;
 }
 .profileStaffNumber{
+  width: 130px;
+  height: 50px;
   background-color: #F2F2F2;
+  border-style: none;
   color:#2A3E93;
   font-size: 25px;
-  border-radius: 10px;
   font-weight: bold;
-  width: 175px;
-  text-align: center;
-  padding-top: 8px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-radius: 10px;
+}
+.profileStaffNumberLeftSpae{
+  margin-left: 40px;
+}
+.profileSpacerTop{
+  font-size: 4px;
+  color:white;
 }
 /**********************************/
-.profileDiv5{
+.profileDiv4{
   margin-top: 25px;
 }
 .profileText3{
@@ -67,12 +80,19 @@
   outline: 0;
   background: transparent;
   border-bottom: 2px solid #2A3E93;
-  width: 300px;
+  width: 400px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  color:#2A3E93;
+  font-size: 25px;
+  padding-left: 25px;
+
 }
 .profileDivInput{
+  margin-left: 120px;
 }
 /**********************************/
-.profileDiv6{
+.profileDiv5{
   margin-top: 50px;
 }
 .profileText4{
@@ -86,7 +106,7 @@
   margin-left: 10px;
 }
 /**********************************/
-.profileDiv7{
+.profileDiv6{
 }
 .profileDivFoother{
   margin-top: 50px;
@@ -109,9 +129,5 @@
 /**********************************/
 .inline{
   display: inline-block;
-}
-.profileSpacerTop{
-  font-size: 4px;
-  color:white;
 }
 /*$(".theComboExample").theCombo();*/

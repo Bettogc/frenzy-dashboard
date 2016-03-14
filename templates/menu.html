@@ -1,68 +1,80 @@
-<!--*****************************************************************************************-->
+<!--  main div  -->
 <div class="bodyMenu container-fluid mainDivStyle">
-    <!--*****************************************************************************************-->
-    <div class="col-md-2 sidebar">
-      <div class="sidebarDashboardDiv" ng-click="callPerfil()">
-        <img class="dasboardIcon" src="img/logo3.png" alt="" />
-      </div>
-      <a ui-sref="menu.profile">
-        <div class="sidebarTextDiv">
-          <p class="sidebarText">PERFIL</p>
-        </div>
-      </a>
-      <a ui-sref="menu.dataEntry">
-        <div class="sidebarTextDiv">
-          <p class="sidebarText">INGRESO DE DATOS</p>
-        </div>
-      </a>
-      <a ui-sref="menu.analytics">
-        <div class="sidebarTextDiv">
-          <p class="sidebarText">ANALYTICS</p>
-        </div>
-      </a>
-      <a ui-sref="menu.record">
-        <div class="sidebarTextDiv">
-          <p class="sidebarText">HISTORIAL</p>
-        </div>
-      </a>
-      <a ui-sref="menu.finance">
-        <div class="sidebarTextDiv">
-          <p class="sidebarText">FINANZAS</p>
-        </div>
-      </a>
-      <a ui-sref="menu.technicalSupport">
-        <div class="sidebarTextDiv">
-          <p class="sidebarText">SOPORTE TECNICO</p>
-        </div>
-      </a>
+  <!--  side bar  -->
+  <div class="col-md-2 sidebar">
+    <!--  dashboard image  -->
+    <div class="sidebarDashboardDiv" ng-click="callPerfil()">
+      <img class="dasboardIcon" src="img/logo3.png" alt="" />
     </div>
-    <!--*****************************************************************************************-->
-    <!--*****************************************************************************************-->
-    <nav class="col-md-10 col-md-offset-2 main navbar-fixed-top" style="margin-bottom:100px;">
-      <div>
-        <div  class="navbar-collapse">
-          <div class="">
-            <input type="text" class="form-control" placeholder="Search..." style="color:#3F51B5; font-weight:bolder;">
-          </div>
-          <div class="divUsserNavBar">
-            <img class="headerUsserLogo" src="img/usuario2.jpg" alt="" />
-            <div class="ellipsifyThreeLines">
-              <div class="ellipsify">
-                <div class="pre-dots"></div>
-                <div class="dots">&hellip;</div>
-                <p class="">Dominos pizza</p>
-              </div>
+    <!--  profile opcion, href  -->
+    <a ui-sref="menu.profile" style="text-decoration:none;">
+      <div class="sidebarTextDiv">
+        <p class="sidebarText">PERFIL</p>
+      </div>
+    </a>
+    <!--  data entry opcion, href  -->
+    <a ui-sref="menu.dataEntry" style="text-decoration:none;">
+      <div class="sidebarTextDiv">
+        <p class="sidebarText">INGRESO DE DATOS</p>
+      </div>
+    </a>
+    <!--  analytics opcion, href  -->
+    <a ui-sref="menu.analytics" style="text-decoration:none;">
+      <div class="sidebarTextDiv">
+        <p class="sidebarText">ANALYTICS</p>
+      </div>
+    </a>
+    <!--  record opcion, href  -->
+    <a ui-sref="menu.record" style="text-decoration:none;">
+      <div class="sidebarTextDiv">
+        <p class="sidebarText">HISTORIAL</p>
+      </div>
+    </a>
+    <!--  finance opcion, href  -->
+    <a ui-sref="menu.finance" style="text-decoration:none;">
+      <div class="sidebarTextDiv">
+        <p class="sidebarText">FINANZAS</p>
+      </div>
+    </a>
+    <!--  technical support opcion, href  -->
+    <a ui-sref="menu.technicalSupport" style="text-decoration:none;">
+      <div class="sidebarTextDiv">
+        <p class="sidebarText">SOPORTE TECNICO</p>
+      </div>
+    </a>
+  </div>
+  <!--*****************************************************************************************-->
+  <!--  header bar -->
+  <nav class="col-md-10 col-md-offset-2 main navbar-fixed-top" style="margin-bottom:100px;">
+    <div>
+      <div  class="navbar-collapse">
+        <!--  input search-->
+        <div class="">
+          <!--  "some styles do not work in css file, that is why we need to put some styles in the html file"  -->
+          <input type="text" class="form-control" placeholder="Search..." style="color:#3F51B5; font-weight:bolder;">
+        </div>
+        <!--  div whit image and usser name  -->
+        <div class="divUsserNavBar">
+          <!--  image-->
+          <img class="headerUsserLogo" src="img/usuario2.jpg" alt="" />
+          <!--  usser name  -->
+          <div class="ellipsifyThreeLines">
+            <div class="ellipsify">
+              <div class="pre-dots"></div>
+              <div class="dots">&hellip;</div>
+              <p class="">Dominos pizza</p>
             </div>
           </div>
         </div>
       </div>
-    </nav>
-    <div class="col-md-10 col-md-offset-2 main" style="overflow:scroll;height:815px; margin-top:110px;">
-
-      <!--*****************************************************************************************-->
-      <div style="">
-        <div ui-view></div>
-      </div>
     </div>
-    <!--*****************************************************************************************-->
+  </nav>
+  <!--*****************************************************************************************-->
+  <!--  ui view  -->
+  <div class="col-md-10 col-md-offset-2 main menuUiViewStyle">
+    <div style="">
+      <!--  here we call all views in menu file  -->
+      <div ui-view></div>
+    </div>
+  </div>
 </div>

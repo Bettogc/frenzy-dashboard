@@ -52,7 +52,27 @@ frenzyWeb.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/signin');
 });
 /************************************************************************************************/
-
+frenzyWeb.controller('ProfileController', function($scope) {
+  $scope.saludo = 'hola'
+})
+/************************************************************************************************/
+/******  staff number chance color input  **************/
+function staffNumber1() {
+    document.getElementById("option1").style.borderColor = "#2A3E93";
+    document.getElementById("option2").style.borderColor = "";
+    document.getElementById("option3").style.borderColor = "";
+}
+function staffNumber2() {
+    document.getElementById("option1").style.borderColor = "";
+    document.getElementById("option2").style.borderColor = "#2A3E93";
+    document.getElementById("option3").style.borderColor = "";
+}
+function staffNumber3() {
+    document.getElementById("option1").style.borderColor = "";
+    document.getElementById("option2").style.borderColor = "";
+    document.getElementById("option3").style.borderColor = "#2A3E93";
+}
+/************************************************************************************************/
   app.run(['$rootScope', "$location", function($scope, $location) {
 
 
